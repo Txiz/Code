@@ -1,4 +1,4 @@
-package main.java.default_method;
+package main.java.common;
 
 /**
  * 接口使用

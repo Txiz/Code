@@ -5,26 +5,33 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.txiz</groupId>
-    <artifactId>spring_aop</artifactId>
+    <artifactId>spring_light</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <spring.version>5.3.22</spring.version>
-        <aspectjweaver.version>1.9.9.1</aspectjweaver.version>
+        <junit.version>4.13.2</junit.version>
+        <cglib.version>3.3.0</cglib.version>
+        <hutool.version>5.8.3</hutool.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${spring.version}</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>${aspectjweaver.version}</version>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>${cglib.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-core</artifactId>
+            <version>${hutool.version}</version>
         </dependency>
     </dependencies>
 </project>
